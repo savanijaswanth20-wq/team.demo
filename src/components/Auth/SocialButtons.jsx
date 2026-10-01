@@ -1,12 +1,10 @@
 import React from 'react'
-import { GoogleIcon, GitHubIcon, MicrosoftIcon, AppleIcon } from '../UI/Icons'
+import { GoogleIcon, GitHubIcon } from '../UI/Icons'
 
 export const SocialButtons = ({ onSocialLogin, isLoading }) => {
   const providers = [
     { id: 'google', name: 'Google', icon: <GoogleIcon /> },
     { id: 'github', name: 'GitHub', icon: <GitHubIcon /> },
-    { id: 'microsoft', name: 'Microsoft', icon: <MicrosoftIcon /> },
-    { id: 'apple', name: 'Apple', icon: <AppleIcon /> },
   ]
 
   return (
