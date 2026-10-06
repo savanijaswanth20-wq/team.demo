@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
-import AuthHero from './components/Auth/AuthHero'
 import LoginForm from './components/Auth/LoginForm'
 import ForgotPasswordModal from './components/Auth/ForgotPasswordModal'
 import WelcomeDashboard from './components/Dashboard/WelcomeDashboard'
@@ -64,14 +63,11 @@ function App() {
         {currentUser ? (
           <WelcomeDashboard user={currentUser} onLogout={handleLogout} />
         ) : (
-          <>
-            <AuthHero />
-            <LoginForm
-              onLoginSuccess={handleLoginSuccess}
-              onOpenForgotPassword={() => setIsForgotModalOpen(true)}
-              onNotify={showToast}
-            />
-          </>
+          <LoginForm
+            onLoginSuccess={handleLoginSuccess}
+            onOpenForgotPassword={() => setIsForgotModalOpen(true)}
+            onNotify={showToast}
+          />
         )}
       </main>
 

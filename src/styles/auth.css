@@ -265,7 +265,7 @@
   box-shadow: 0 0 10px var(--primary-glow);
 }
 
-/* Layout Main Split */
+/* Main Content Layout (Centered) */
 .auth-page-main {
   flex: 1;
   position: relative;
@@ -274,17 +274,14 @@
   width: 100%;
   margin: 0 auto;
   padding: 40px 24px;
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 48px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
 
 @media (max-width: 960px) {
   .auth-page-main {
-    grid-template-columns: 1fr;
-    gap: 32px;
     padding: 24px 16px;
   }
 }
@@ -489,10 +486,12 @@
   100% { transform: scale(0.95); opacity: 0.8; }
 }
 
-/* Authentication Card (Right Column) */
+/* Authentication Card (Centered) */
 .auth-card-wrapper {
   perspective: 1000px;
   width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .auth-card {
