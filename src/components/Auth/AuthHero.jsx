@@ -34,16 +34,6 @@ export const AuthHero = () => {
               <p className="feature-desc">End-to-end encrypted sessions with multi-factor SSO.</p>
             </div>
           </div>
-
-          <div className="hero-feature-item">
-            <div className="feature-icon-wrapper">
-              <span className="feature-emoji">⚡</span>
-            </div>
-            <div>
-              <h4 className="feature-title">Real-Time Team Workspace</h4>
-              <p className="feature-desc">Instant sync across branches, boards, and deployments.</p>
-            </div>
-          </div>
         </div>
 
         {/* Social Proof / Stats Box */}
